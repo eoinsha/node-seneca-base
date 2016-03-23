@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Eoin Shanaghy <eoin.shanaghy@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eoinsha/node-seneca-base.git"
+  },
+  "homepage": "https://github.com/eoinsha/node-seneca-base#readme",
   "license": "MIT",
   "dependencies": {
     "async": "^2.0.0-rc.1",

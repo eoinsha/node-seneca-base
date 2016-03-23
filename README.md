@@ -1,7 +1,7 @@
 seneca-node-base
 ===
 
-An npm module and Docker base image d comprising a few dependencies commonly used in Node.js microservices. This repo demonstrates how using a base layer for microservices can significantly reduce build and deployment time and reduce resources on the runtime host.
+An npm module and Docker base image comprising a few dependencies commonly used in Node.js microservices. This repo demonstrates how using a base layer for microservices can significantly reduce build and deployment time and reduce resources on the runtime host.
 
 # Why
 
