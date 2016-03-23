@@ -1,0 +1,31 @@
+rabbitmq:
+  image: rabbitmq:3-management
+  ports:
+    - "5672:5672"
+    - "15672:15672"
+
+user:
+  build: user
+  links:
+    - rabbitmq
+  restart: always
+  environment:
+    AMQP_URL: amqp://guest:guest@rabbitmq:5672
+
+message:
+  build: message
+  links:
+    - rabbitmq
+  restart: always
+  environment:
+    AMQP_URL: amqp://guest:guest@rabbitmq:5672
+
+gateway:
+  build: api-gateway
+  links:
+    - rabbitmq
+  ports:
+    - "3000:3000"
+  restart: always
+  environment:
+    AMQP_URL: amqp://guest:guest@rabbitmq:5672

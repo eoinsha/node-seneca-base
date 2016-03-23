@@ -1,0 +1,27 @@
+{
+  "name": "node-seneca-base",
+  "version": "1.0.0",
+  "description": "Docker base image for Seneca microservices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.0.0-rc.1",
+    "chairo": "^2.1.0",
+    "hapi": "^13.2.1",
+    "joi": "^8.0.5",
+    "lodash": "^4.6.1",
+    "pino": "^1.0.2",
+    "ramda": "^0.19.1",
+    "request": "^2.69.0",
+    "seneca": "^2.0.0",
+    "seneca-web": "^0.7.1",
+    "tape": "^4.5.1"
+  },
+  "devDependencies": {
+    "seneca-amqp-transport": "^0.2.0"
+  }
+}

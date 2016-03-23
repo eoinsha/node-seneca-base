@@ -1,0 +1,10 @@
+node_modules
+README.md
+circle.yml
+.git*
+Dockerfile
+.npmrc
+npm-debug.log
+coverage
+examples
+scripts
